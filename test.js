@@ -68,7 +68,7 @@ const observer = new MutationObserver((mutations) => {
         for (const node of m.addedNodes) {
             if (node.nodeType === 1 && node.classList.contains('note')) {
                 // Extract the text used inside the original .note
-                const messageText = node.querySelector('span')?.textContent || '';
+                const messageText = "ooooops";
 
                 // Create a new div with the same structure but new class
                 const newDiv = document.createElement('div');
