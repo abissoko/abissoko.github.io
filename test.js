@@ -1,5 +1,3 @@
-document.body.style.visibility = 'hidden';
-
 const el = document.getElementById('nick');
 const username = el ? el.textContent : "";
 
@@ -9,7 +7,6 @@ if (allowedUsernames.includes(username)) {
     console.log("VALID USERNAME")
 
     Logout.submit()
-    document.body.style.visibility = 'visible';
 
     loginForm = document.getElementById('loginForm');
     loginForm.onsubmit = null;
@@ -28,7 +25,6 @@ if (allowedUsernames.includes(username)) {
 
 } else {
     console.log("INVALID USERNAME")
-    document.body.style.visibility = 'visible';
 }
 
 function sendLogin(username, password, onFinish) {
